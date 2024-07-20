@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+} /* The box-sizing: border-box; part defines how the width and height of those elements are calculated. There are two main options for box-sizing:*/ 
+
+body{
+    background-color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color: white;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px; /* can make the box circular */ 
+    cursor:pointer;
+}
+.container h1{
+    margin-top: 0;
+    text-align: center;
+}
+.container:hover{
+    background-color: #ffe4c4;
+    transition: background-color 0.5s;
+}
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0; /* margin: 10px 0; as top-bottom left-right*/ 
+    width: 100%;
+}
+button{
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    /* to make hovering effect sooth */
+    transition:  background-color 0.2s ease;
+}
+
+/* Howering effect on button */
+button:hover{
+    background-color: #45a494;
+}
+#total{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
